@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+@font-face {
+  font-family: Prequel;
+  src: url('./fonts/Prequel.ttf');
+}
+
+body * {
+  font-family: 'PT Mono';
+}
+
+.btn-box-shadow {
+  box-shadow: 3px 3px 0 0 #1F2933;
+}
+
+.font-prequel {
+  font-family: Prequel;
+}
