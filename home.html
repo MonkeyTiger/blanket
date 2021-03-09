@@ -11,12 +11,18 @@
 </head>
 
 <body class="border-2 border-gray-800 w-full">
-  <div class="h-20 flex border-b-2 border-gray-800">
-    <div class="w-2/3 flex h-full">
-      <div class="w-1/3 flex justify-center items-center">
-        <div class="text-2xl text-gray-800 font-prequel">The Blanket Tape</div>
+  <div class="lg:h-20 md:h-14 h-12 flex border-b-2 border-gray-800 box-content">
+    <div class="xl:w-2/3 lg:w-1/2 md:w-2/3 sm:w-3/5 w-full flex h-full">
+      <div class="xl:w-1/3 lg:w-1/2 md:w-2/3 w-full flex items-center">
+        <div class="block lg:hidden border-r-2 h-full flex items-center border-gray-800 px-4">
+          <img src="./images/icons/menu.svg" alt="" />
+        </div>
+        <div class="md:text-2xl text-base text-gray-800 h-full font-prequel w-full flex items-center justify-center">
+          The Blanket Tape
+        </div>
       </div>
-      <div class="w-2/3 border-l-2 border-gray-800 flex justify-end items-center pr-4">
+      <div
+        class="xl:w-2/3 lg:w-1/2 md:w-1/3 border-l-2 border-gray-800 md:flex hidden xl:justify-end lg:justify-center items-center pr-4">
         <div class="flex">
           <a href="#" class="mx-4">
             <img src="./images/icons/notification.svg" alt="">
@@ -30,30 +36,32 @@
         </div>
       </div>
     </div>
-    <div class="w-1/3 flex">
-      <div class="flex w-1/2 border-l-2 border-gray-800 flex justify-center items-center">
-        <div class="relative mr-4">
+    <div class="xl:w-1/3 lg:w-1/2 md:w-1/3 sm:w-2/5 flex">
+      <div
+        class="md:flex hidden lg:w-1/2 border-l-2 lg:order-2 xl:order-1 border-gray-800 justify-center items-center px-2 flex-shrink-0">
+        <div class="relative lg:mr-4">
           <div class="absolute w-2 h-2 bg-green-500 -right-1 -top-1"></div>
           <img src="./images/avatar/1.png" class="w-10 h-10" alt="">
         </div>
-        <div>
-          <p class="text-base font-bold text-gray-800">Hannah Benneth</p>
-          <p class="text-xs text-gray-400">Fashion Expert</p>
+        <div class="flex flex-col lg:flex md:hidden">
+          <span class="text-base font-bold text-gray-800">Hannah Benneth</span>
+          <span class="text-xs text-gray-400">Fashion Expert</span>
         </div>
       </div>
-      <div class="w-1/2 border-l-2 border-gray-800 flex justify-center items-center">
+      <div
+        class="lg:w-1/2 w-full border-l-2 lg:order-1 xl:order-2 border-gray-800 flex justify-center items-center px-2">
         <button
-          class="bg-indigo-600 border-0 text-white w-52 pl-0.5 box-content h-9 border border-gray-800 btn-box-shadow font-bold text-sm">
+          class="bg-indigo-600 border-0 text-white lg:w-52 md:w-full sm:w-40 box-content h-9 border border-gray-800 btn-box-shadow font-bold md:text-sm text-xs flex items-center justify-center px-3">
           <i class="fa fa-plus"></i>
-          Create New Post
+          <span class="sm:block hidden ml-1">Create New Post</span>
         </button>
       </div>
     </div>
   </div>
 
-  <div class="flex p-10 bg-gray-100 border-b-2 border-gray-800">
-    <div class="w-4/5 flex">
-      <div class="w-1/5">
+  <div class="flex lg:py-9 md:py-8 md:px-10 sm:px-5 sm:py-5 py-2 px-2.5 bg-gray-100 border-b-2 border-gray-800">
+    <div class="xl:w-4/5 w-full flex">
+      <div class="lg:w-1/5 lg:block hidden xl:text-base lg:text-sm">
         <a href="#" class="flex items-center mb-10 font-bold text-indigo-700">
           <img src="./images/icons/home.svg" alt="" class="mr-2">
           Home
@@ -75,27 +83,27 @@
           People
         </a>
       </div>
-      <div class="w-4/5 px-5">
-        <div class="bg-white py-6 px-7 mb-5">
-          <p class="font-bold text-gray-800 text-base mb-0.5">
+      <div class="lg:w-4/5 w-full xl:px-5">
+        <div class="bg-white md:py-6 md:px-7 p-5 mb-5">
+          <p class="font-bold text-gray-800 md:text-base sm:text-sm text-xs mb-0.5">
             Hannah Benneth <span class="font-normal text-gray-500">started a thread on</span> Billy Reid
           </p>
           <p class="text-gray-500 text-xs mb-4">January 26, a few seconds ago</p>
-          <p class="font-bold text-xl text-gray-800 mb-4">
+          <p class="font-bold md:text-xl text-lg text-gray-800 mb-4">
             It looks like we’re going to be wearing cloth face masks for a while, which is all the more reason to find
             one that you like.
           </p>
-          <p class="text-base text-gray-800 mb-4">
+          <p class="lg:text-base md:text-sm text-xs text-gray-800 mb-4">
             The CDC has been recommending that people wear masks when going out in public for weeks. And yesterday
             Governor Andrew Cuomo issued an order that New Yorkers must wear masks in public places where social
             distancing six feet is not possible.
           </p>
-          <div class="flex mb-6 pb-0.5 justify-between">
-            <div class="text-white font-bold text-xs">
-              <span class="bg-indigo-700 mx-0.5 rounded px-2 py-1">Questions</span>
-              <span class="bg-red-400 mx-0.5 rounded px-2 py-1">Fashion</span>
-              <span class="bg-green-400 mx-0.5 rounded px-2 py-1">News</span>
-              <span class="bg-yellow-600 mx-0.5 rounded px-2 py-1">Clothing</span>
+          <div class="flex md:mb-6 mb-4 md:pb-0.5 sm:pb-0 justify-between md:flex-row flex-col">
+            <div class="text-white font-bold text-xs flex flex-wrap md:mb-0 mb-4">
+              <span class="bg-indigo-700 mx-0.5 rounded px-2 py-1 mb-1 flex">Questions</span>
+              <span class="bg-red-400 mx-0.5 rounded px-2 py-1 mb-1 flex">Fashion</span>
+              <span class="bg-green-400 mx-0.5 rounded px-2 py-1 mb-1 flex">News</span>
+              <span class="bg-yellow-600 mx-0.5 rounded px-2 py-1 mb-1 flex">Clothing</span>
             </div>
             <div class="flex mb-1 text-gray-800">
               <span class="flex text-xs mr-5 pr-0.5">
@@ -108,7 +116,7 @@
               </span>
             </div>
           </div>
-          <div class="flex text-white font-bold mb-8">
+          <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
             <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
               Add a Comment
             </button>
@@ -116,8 +124,8 @@
               Share
             </button>
           </div>
-          <div class="border border-gray-400 bg-gray-50 p-6">
-            <p class="font-bold text-base text-gray-800 mb-0">Jonathan Reinink</p>
+          <div class="border border-gray-400 bg-gray-50 md:p-6 px-4 py-5">
+            <p class="font-bold md:text-base sm:text-sm text-xs text-gray-800 mb-0">Jonathan Reinink</p>
             <p class="text-xs text-gray-500 mb-3">a few seconds ago</p>
             <p class="text-sm text-gray-800 mb-3">
               So naive and out of touch I didn't realise this business was booming hah...I still wear the standard
@@ -136,30 +144,175 @@
           </div>
         </div>
 
+        <div class="flex xl:hidden mb-5 flex-col md:flex-row">
+          <div class="bg-indigo-100 md:mr-2.5 md:mb-0 mb-5">
+            <div class="py-5 px-7 text-indigo-700 font-bold sm:text-xl text-lg border-b border-indigo-700">
+              Help Requests
+            </div>
+            <div class="p-7 pb-0">
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  The Best Street Style at the Spring 2021 Couture Shows in Paris
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">What Are Your Favorite Clothes?</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  New Fashion Arrivals To Get Excited About Now
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Nikki Person </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">Versace or Gucci</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  Meet the Couple Taking Glamour Shots of Korea’s Modern Families
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">What's the weirdest trend?</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  Which one way to shipping do you prefer? Shopping online or purchasing in a local store?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Jason Swarrow </span>
+                  <span class="text-gray-500">20 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">How To Take Care Of Clothes</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  High-waisted trousers with unique suspenders
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Nikki Person </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">Versace or Gucci</p>
+              </div>
+
+              <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+                <i class="fa fa-ellipsis-h"></i>
+                Show More
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+          <div class="bg-indigo-100 md:ml-2.5">
+            <div class="py-5 px-7 text-indigo-700 font-bold sm:text-xl text-lg border-b border-indigo-700">
+              Community
+            </div>
+            <div class="p-7 pb-0">
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  Hope people will find cute ones and share them!!
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">few seconds ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">Cloth Face Masks</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  I'll posit this thread in here, but it can be moved if the mods feel it should be elsewhere....
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Eric Gomes </span>
+                  <span class="text-gray-500">2 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">Scott Trindle - Photographer</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  What other celebs do we know have "contracts" with big brands?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Eric Gomes </span>
+                  <span class="text-gray-500">28 minutes ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">The Business of Celebrities</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  I think that Beyonce just buy a lot of Gucci...
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Anna Chapman </span>
+                  <span class="text-gray-500">one day ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">Celebrities as Fashion</p>
+              </div>
+              <div class="mb-6">
+                <p class="text-base text-gray-800 mb-1">
+                  What other celebs do we know have "contracts" with big brands?
+                </p>
+                <p class="text-xs">
+                  <span class="text-indigo-700 font-bold">Maria Sarrow </span>
+                  <span class="text-gray-500">one day ago in</span>
+                </p>
+                <p class="text-xs font-bold text-gray-800">Celebrities as Fashion</p>
+              </div>
+
+              <div class="text-indigo-700 text-center border-t-2 border-indigo-700 text-sm font-bold py-3.5">
+                <i class="fa fa-ellipsis-h"></i>
+                Show More
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="bg-white py-6 px-7 mb-5">
-          <p class="text-base font-bold text-gray-800 mb-0.5">
+          <p class="font-bold text-gray-800 md:text-base sm:text-sm text-xs mb-0.5">
             Jannet Stevens <span class="text-gray-500 font-normal">added images to album:</span> Madras Shore Coat
           </p>
-          <p class="text-gray-500 text-xs mb-6">January 25, 06:00 PM</p>
+          <p class="text-gray-500 text-xs mb-4">January 25, 06:00 PM</p>
 
           <div class="flex flex-wrap mb-4">
-            <img class="mb-2 mr-2" src="./images/products/1.png" alt="">
-            <img class="mb-2 mr-2" src="./images/products/2.png" alt="">
-            <img class="mb-2 mr-2" src="./images/products/3.png" alt="">
-            <img class="mb-2 mr-2" src="./images/products/4.png" alt="">
-            <img class="mb-2 mr-2" src="./images/products/5.png" alt="">
-            <img class="mb-2 mr-2" src="./images/products/6.png" alt="">
-            <img class="mb-2 mr-2" src="./images/products/7.png" alt="">
-            <div class="border border-dashed p-3 border-gray-500 w-44 h-44">
-              <div class="w-full h-full bg-gray-100 flex justify-center items-center flex-col font-sm text-gray-800">
-                See All
-                <span class="text-2xl font-bold text-indigo-500">28</span>
-                Images
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <img class="w-full" src="./images/products/1.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <img class="w-full" src="./images/products/2.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <img class="w-full" src="./images/products/3.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 md:block hidden">
+              <img class="w-full" src="./images/products/4.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 md:block hidden">
+              <img class="w-full" src="./images/products/5.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 lg:block hidden">
+              <img class="w-full" src="./images/products/6.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2 lg:block hidden">
+              <img class="w-full" src="./images/products/7.png" alt="">
+            </div>
+            <div class="lg:w-1/4 md:w-1/3 w-1/2 pb-2 pr-2">
+              <div class="border border-dashed p-3 w-full h-full border-gray-500">
+                <div class="w-full h-full bg-gray-100 flex justify-center items-center flex-col font-sm text-gray-800">
+                  See All
+                  <span class="text-2xl font-bold text-indigo-500">28</span>
+                  Images
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="flex text-white font-bold mb-8">
+          <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
             <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
               Add a Comment
             </button>
@@ -167,8 +320,8 @@
               Share
             </button>
           </div>
-          <div class="border border-gray-400 bg-gray-50 p-6">
-            <p class="font-bold text-base text-gray-800 mb-0">Vanessa Bansh</p>
+          <div class="border border-gray-400 bg-gray-50 md:p-6 px-4 py-5">
+            <p class="font-bold md:text-base sm:text-sm text-xs text-gray-800 mb-0">Vanessa Bansh</p>
             <p class="text-xs text-gray-500 mb-3">20 minutes ago</p>
             <p class="text-sm text-gray-800 mb-3">
               These are from topshop but they give the look of a designers shorts which I have forgotten, can someone
@@ -188,19 +341,19 @@
         </div>
 
         <div class="bg-white py-6 px-7 mb-5">
-          <p class="font-bold text-base text-gray-800">
+          <p class="font-bold md:text-base sm:text-sm text-xs text-gray-800">
             John Smith <span class="font-normal text-gray-500 mb-0.5">posted an article:</span>
           </p>
           <p class="text-xs text-gray-500 mb-5 pb-0.5">January 26, 30 minutes ago</p>
-          <div class="flex">
-            <div class="w-2/5">
-              <img src="./images/articles/1.png" alt="">
+          <div class="flex md:flex-row flex-col">
+            <div class="md:w-2/5 md:pr-9 w-full lg:mb-0 mb-6">
+              <img src="./images/articles/1.png" class="w-full" alt="">
             </div>
-            <div class="w-3/5">
-              <p class="text-2xl text-gray-800 font-bold mb-3">
+            <div class="md:w-3/5 w-full">
+              <p class="lg:text-2xl md:text-xl text-lg text-gray-800 font-bold mb-3">
                 Inside the New Exhibit of Paolo Roversi, Photographer and Longtime Comme des Garçons Collaborator
               </p>
-              <p class="text-base text-gray-800 mb-4">
+              <p class="lg:text-base md:text-sm text-xs text-gray-800 mb-4">
                 Italian fashion photographer Paolo Roversi is one of Comme des Garçons’s closest collaborators. He first
                 met designer Rei Kawakubo in Paris in the ’80s and has continued to photograph her artful collections
                 over the years. “I started doing catalogs with Rei in the ’80s, and then every season I started
@@ -226,7 +379,7 @@
                   No Comments
                 </span>
               </div>
-              <div class="flex text-white font-bold mb-4">
+              <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
                 <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
                   Add a Comment
                 </button>
@@ -239,19 +392,19 @@
         </div>
 
         <div class="bg-white py-6 px-7">
-          <p class="font-bold text-base text-gray-800">
+          <p class="font-bold md:text-base sm:text-sm text-xs text-gray-800">
             John Smith <span class="font-normal text-gray-500 mb-0.5">posted a new product for </span>Wadness Collection
           </p>
           <p class="text-xs text-gray-500 mb-5 pb-0.5">January 26, 39 minutes ago</p>
-          <div class="flex">
-            <div class="w-2/5">
-              <img src="./images/articles/2.png" alt="">
+          <div class="flex md:flex-row flex-col">
+            <div class="md:w-2/5 md:pr-9 w-full lg:mb-0 mb-6">
+              <img src="./images/articles/2.png" class="w-full" alt="">
             </div>
-            <div class="w-3/5">
-              <p class="text-2xl text-gray-800 font-bold mb-3">
+            <div class="md:w-3/5 w-full">
+              <p class="lg:text-2xl md:text-xl text-lg text-gray-800 font-bold mb-3">
                 Marc Jacobs’s Earring Isn’t the Only Quirky Part of His Outfit
               </p>
-              <p class="text-base text-gray-800 mb-4">
+              <p class="lg:text-base md:text-sm text-xs text-gray-800 mb-4">
                 Marc Jacobs’s Instagram fit pics should be studied in a museum. There is always an art to his #ootd
                 posts: He doesn’t just post outfits, rather a whole thematic mood to go with them, complete with
                 gorgeous settings and thoughtful captions. He will take a selfie in his garden while wearing a Gucci
@@ -268,7 +421,7 @@
                   <span class="font-bold mr-1">26</span> Comments
                 </span>
               </div>
-              <div class="flex text-white font-bold mb-9">
+              <div class="flex md:text-sm text-xs text-white font-bold md:mb-8 mb-6">
                 <button class="border border-gray-800 bg-indigo-600 btn-box-shadow font-sm h-9 box-content px-6 mr-5">
                   Add a Comment
                 </button>
@@ -278,10 +431,10 @@
               </div>
             </div>
           </div>
-          <div class="border border-gray-400 bg-gray-50 p-6">
-            <p class="font-bold text-base text-gray-800 mb-0">Erica Gomes</p>
+          <div class="border border-gray-400 bg-gray-50 md:p-6 px-4 py-5">
+            <p class="font-bold md:text-base sm:text-sm text-xs text-gray-800 mb-0">Erica Gomes</p>
             <p class="text-xs text-gray-500 mb-3">20 minutes ago</p>
-            <p class="text-sm text-gray-800 mb-3">
+            <p class="md:text-sm text-xs text-gray-800 mb-3">
               As today is a snow day in the northeast, Jacobs’s latest Instagram upload is set against a wintry
               backdrop. “Snow what,” he captioned his snow day look, which included a bucket hat, shearling-lined
               leopard print coat.
@@ -300,7 +453,7 @@
         </div>
       </div>
     </div>
-    <div class="w-1/5">
+    <div class="xl:w-1/5 xl:block hidden">
       <div class="bg-indigo-100 mb-5">
         <div class="py-5 px-7 text-indigo-700 font-bold text-xl border-b border-indigo-700">
           Help Requests
@@ -431,11 +584,11 @@
   </div>
 
   <div class="px-10">
-    <div class="w-full pt-14 pb-14">
-      <div class="mt-1.5 flex">
-        <div class="w-1/3">
+    <div class="w-full pt-14 pb-7">
+      <div class="mt-1.5 flex lg:flex-row flex-col">
+        <div class="lg:w-1/3 md:w-full lg:mb-0 mb-9">
           <p class="font-prequel mb-4">The Blanket Tape</p>
-          <p class="mb-4 pr-10">
+          <p class="mb-4 lg:pr-10">
             The Blanket Tape brings to you fashion related news and information. It is our mission to continue offering
             our support to the fashion brands.
           </p>
@@ -447,8 +600,8 @@
             <img class="mr-5 pr-0.5" src="./images/icons/pinterest.svg" alt="">
           </div>
         </div>
-        <div class="w-2/3 flex">
-          <div class="w-1/4">
+        <div class="lg:w-2/3 md:w-full flex flex-wrap">
+          <div class="md:w-1/4 w-1/2 mb-7">
             <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Solutions</p>
             <ul>
               <li><a href="#" class="text-base text-gray-800 mb-2 block">Marketing</a></li>
@@ -457,7 +610,7 @@
               <li><a href="#" class="text-base text-gray-800 mb-2 block">Insights</a></li>
             </ul>
           </div>
-          <div class="w-1/4">
+          <div class="md:w-1/4 w-1/2 mb-7">
             <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Support</p>
             <ul>
               <li><a href="#" class="text-base text-gray-800 mb-2 block">Pricing</a></li>
@@ -466,7 +619,7 @@
               <li><a href="#" class="text-base text-gray-800 mb-2 block">API Status</a></li>
             </ul>
           </div>
-          <div class="w-1/4">
+          <div class="md:w-1/4 w-1/2 mb-7">
             <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Company</p>
             <ul>
               <li><a href="#" class="text-base text-gray-800 mb-2 block">About</a></li>
@@ -476,7 +629,7 @@
               <li><a href="#" class="text-base text-gray-800 mb-2 block">Partners</a></li>
             </ul>
           </div>
-          <div class="w-1/4">
+          <div class="md:w-1/4 w-1/2 mb-7">
             <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Legal</p>
             <ul>
               <li><a href="#" class="text-base text-gray-800 mb-2 block">Claim</a></li>

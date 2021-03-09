@@ -16,3 +16,7 @@ body * {
 .font-prequel {
   font-family: Prequel;
 }
+
+.bg-dark {
+  background: #232B47;
+}
