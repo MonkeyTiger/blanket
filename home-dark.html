@@ -23,21 +23,32 @@
         </div>
       </div>
       <div
-        class="xl:w-2/3 lg:w-1/2 md:w-1/3 border-l-2 border-gray-800 md:flex hidden xl:justify-end lg:justify-center items-center pr-4">
+        class="xl:w-2/3 lg:w-1/2 md:w-1/3 border-l-2 border-gray-800 md:flex hidden xl:justify-end justify-center items-center pr-0 xl:pr-4">
         <div class="flex">
           <a href="#" class="mx-4">
             <img src="./images/icons/notification.svg" alt="">
           </a>
-          <a href="./home.html" class="mx-4">
-            <img src="./images/icons/settings.svg" alt="">
-          </a>
+          <div class="relative">
+            <a href="#" class="mx-4" id="setting">
+              <img src="./images/icons/settings.svg" id="setting-image" alt="">
+            </a>
+            <div class="absolute z-10 bg-gray-700 w-40 left-1/2 top-10 border-2 border-gray-100 text-white hidden"
+              style="transform: translate(-50%, 0)" id="board">
+              <ul>
+                <li class=""><a class="w-full h-full block px-5 py-2 hover:bg-gray-200" href="./home.html">Light
+                    theme</a></li>
+                <li class=""><a class="w-full h-full block px-5 py-2 hover:bg-gray-200" href="./home-dark.html">Dark
+                    theme</a></li>
+              </ul>
+            </div>
+          </div>
           <a href="#" class="mx-4">
             <img src="./images/icons/messages.svg" alt="">
           </a>
         </div>
       </div>
     </div>
-    <div class="xl:w-1/3 lg:w-1/2 md:w-1/3 sm:w-2/5 flex">
+    <div class="xl:w-1/3 lg:w-1/2 md:w-1/3 sm:w-2/5 flex create-new-post-container">
       <div
         class="md:flex hidden lg:w-1/2 border-l-2 lg:order-2 xl:order-1 border-gray-800 justify-center items-center px-2 flex-shrink-0">
         <div class="relative lg:mr-4">
@@ -54,7 +65,7 @@
         <button
           class="bg-indigo-600 border-0 text-white lg:w-52 md:w-full sm:w-40 box-content h-9 border border-gray-800 btn-box-shadow font-bold md:text-sm text-xs flex items-center justify-center px-3">
           <i class="fa fa-plus"></i>
-          <span class="sm:block hidden ml-1">Create New Post</span>
+          <span class="hidden ml-1 create-new-post">Create New Post</span>
         </button>
       </div>
     </div>
@@ -833,6 +844,21 @@
       } else {
         document.querySelector('#mobile-menu').classList.remove('left-0')
         document.querySelector('#mobile-menu').classList.add('-left-80');
+      }
+    });
+
+    document.querySelector('#setting').addEventListener('click', function () {
+      var hasClass = document.querySelector('#board').classList.contains('hidden');
+      if (hasClass) {
+        document.querySelector('#board').classList.remove('hidden');
+      } else {
+        document.querySelector('#board').classList.add('hidden');
+      }
+    });
+
+    document.body.addEventListener('click', function (e) {
+      if (!(e.target.id === 'setting-image')) {
+        document.querySelector('#board').classList.add('hidden');
       }
     });
   </script>
