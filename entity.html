@@ -1,0 +1,420 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body class="border-2 border-gray-800 w-full">
+  <div class="lg:h-20 md:h-14 h-12 flex border-b-2 border-gray-800 box-content">
+    <div class="xl:w-2/3 lg:w-1/2 md:w-2/3 sm:w-3/5 w-full flex h-full">
+      <div class="xl:w-1/3 lg:w-1/2 md:w-2/3 w-full flex items-center">
+        <div class="block lg:hidden border-r-2 h-full flex items-center border-gray-800 px-4 cursor-pointer"
+          id="hamburger">
+          <img src="./images/icons/menu.svg" alt="" />
+        </div>
+        <div class="md:text-2xl text-base text-gray-800 h-full font-prequel w-full flex items-center justify-center">
+          The Blanket Tape
+        </div>
+      </div>
+      <div
+        class="xl:w-2/3 lg:w-1/2 md:w-1/3 border-l-2 border-gray-800 md:flex hidden xl:justify-end justify-center items-center pr-0 xl:pr-4">
+        <div class="flex">
+          <a href="#" class="mx-4">
+            <img src="./images/icons/notification.svg" alt="">
+          </a>
+          <div class="relative mx-4">
+            <a href="#" id="setting">
+              <img src="./images/icons/settings.svg" id="setting-image" alt="">
+            </a>
+            <div class="absolute modal-box-shadow z-10 bg-white w-40 -left-5 lg:top-16 md:top-12 rounded hidden"
+              id="board">
+              <div class="triangle"></div>
+
+              <ul class="py-1">
+                <li class="px-2 py-1">
+                  <a class="w-full h-full flex items-center" href="./entity.html">
+                    <div class="w-4 h-4 mr-2 rounded-full bg-indigo-600"></div>
+                    Light theme
+                  </a>
+                </li>
+                <li class="px-2 py-1">
+                  <a class="w-full h-full flex items-center" href="./entity-dark.html">
+                    <div class="w-4 h-4 mr-2 rounded-full border border-gray-800 bg-white"></div>
+                    Dark theme
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="mx-4">
+            <img src="./images/icons/messages.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="xl:w-1/3 lg:w-1/2 md:w-1/3 sm:w-2/5 flex create-new-post-container">
+      <div
+        class="md:flex hidden lg:w-1/2 border-l-2 lg:order-2 xl:order-1 border-gray-800 justify-center items-center px-2 flex-shrink-0">
+        <div class="relative lg:mr-4">
+          <div class="absolute w-2 h-2 bg-green-500 -right-1 -top-1"></div>
+          <img src="./images/avatar/1.png" class="w-10 h-10" alt="">
+        </div>
+        <div class="flex flex-col lg:flex md:hidden">
+          <span class="text-base font-bold text-gray-800">Hannah Benneth</span>
+          <span class="text-xs text-gray-400">Fashion Expert</span>
+        </div>
+      </div>
+      <div
+        class="lg:w-1/2 w-full border-l-2 lg:order-1 xl:order-2 border-gray-800 flex justify-center items-center px-2">
+        <button
+          class="bg-indigo-600 border-0 text-white lg:w-52 md:w-full sm:w-40 box-content h-9 border border-gray-800 btn-box-shadow font-bold md:text-sm text-xs flex items-center justify-center px-3">
+          <i class="fa fa-plus"></i>
+          <span class="hidden ml-1 create-new-post">Create New Post</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-gray-800">
+    <div class="w-full bg-gray-800 px-5 py-16 flex justify-end">
+      <button class="text-white flex py-3 pl-5 pr-3 border border-white border-dashed">
+        <span class="mr-5 text-sm font-bold">
+          Edit Basic Information
+        </span>
+        <img src="./images/icons/edit.svg" alt="">
+      </button>
+    </div>
+
+    <div class="flex bg-gray-100 px-5 py-5">
+      <div class="w-2/3 pr-5">
+        <div class="border border-gray-300 bg-white mb-5">
+          <div class="flex p-10 pt-8 border-b border-gray-300">
+            <div class="relative w-48 mr-10">
+              <div
+                class="bottom-0 w-48 h-48 border border-gray-800 bg-gray-100 flex justify-center items-center btn-box-shadow">
+                <img src="./images/icons/camera.svg" alt="">
+              </div>
+            </div>
+            <div>
+              <p class="text-base text-gray-800 mb-2">Est. 2004</p>
+              <p class="text-4xl text-gray-800 mb-1.5 font-bold">Robinson Reid</p>
+              <p class="text-base text-gray-800 font-bold mb-7 flex">
+                Brooklyn, NY, US
+                <img src="./images/icons/marker.svg" class="ml-2" alt="">
+              </p>
+              <div class="flex text-white text-xs">
+                <span class="bg-indigo-700 mx-0.5 rounded px-2 py-1 mb-1 flex">Menswear</span>
+                <span class="bg-red-400 mx-0.5 rounded px-2 py-1 mb-1 flex">Contemporary</span>
+                <span class="bg-green-400 mx-0.5 rounded px-2 py-1 mb-1 flex">Modern</span>
+              </div>
+            </div>
+          </div>
+          <div class="p-10">
+            <div class="flex justify-between items-center mb-5">
+              <span class="font-bold text-xl text-gray-800">Key Persons</span>
+              <a href="#">
+                <img src="./images/icons/dots.svg" alt="">
+              </a>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex">
+                <div class="flex relative flex-shrink-0 mr-3">
+                  <img src="./images/avatar/2.png" alt="">
+                  <div class="w-2 h-2 bg-green-500 absolute -top-1 -right-1"></div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-gray-800 font-bold text-base mb-0.5">Jonathan Rewin</span>
+                  <span class="text-gray-400 text-xs">Founder & CEO</span>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex relative flex-shrink-0 mr-3">
+                  <img src="./images/avatar/2.png" alt="">
+                  <div class="w-2 h-2 bg-green-500 absolute -top-1 -right-1"></div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-gray-800 font-bold text-base mb-0.5">Marvin Harris</span>
+                  <span class="text-gray-400 text-xs">Administrator</span>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex relative flex-shrink-0 mr-3">
+                  <img src="./images/avatar/2.png" alt="">
+                  <div class="w-2 h-2 bg-green-500 absolute -top-1 -right-1"></div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-gray-800 font-bold text-base mb-0.5">Nikko Larson</span>
+                  <span class="text-gray-400 text-xs">Moderator</span>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="flex relative flex-shrink-0 mr-3">
+                  <img src="./images/avatar/2.png" alt="">
+                  <div class="w-2 h-2 bg-green-500 absolute -top-1 -right-1"></div>
+                </div>
+                <div class="flex flex-col">
+                  <span class="text-gray-800 font-bold text-base mb-0.5">Kenter James</span>
+                  <span class="text-gray-400 text-xs">Manager</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex border border-gray-300 bg-white">
+          <div class="w-1/2 py-8 px-10 border-r border-gray-300 text-gray-800">
+            <p class="font-bold text-xl mb-5">About Brand</p>
+            <p class="text-sm">
+              Robinson Reid is an Italian luxury fashion brand which sells menswear, women's wear and accessories in
+              Europe, North America and East Asia.
+              <br><br>
+              The brand claims deeply rooted moral values, such as being a humanistic enterprise and using craftsmanship
+              to lend moral dignity to both the artisan and the owner. Robinson Reid started his couture house in 1979
+              with a specialty for cashmere garments for women. Cucinelli personally travels every year in the mountains
+              of Mongolia to purchase cashmere directly from the producers... <span class="font-bold">Read More</span>
+            </p>
+          </div>
+          <div class="w-1/2 py-8 px-10">
+            <div class="flex justify-between mb-4">
+              <span class="text-xl font-bold">Contributors</span>
+              <div class="flex">
+                <img src="./images/icons/group.svg" alt="">
+                <span class="font-bold ml-1 mr-4 text-sm flex items-center">6987</span>
+                <img src="./images/icons/dots.svg" alt="">
+              </div>
+            </div>
+            <div class="flex flex-wrap mb-7">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+              <img src="./images/avatar/2.png" alt="" class="mr-1 mb-1">
+            </div>
+
+            <div>
+              <p class="font-bold text-xl mb-3">Get Involved</p>
+              <p class="text-sm font-bold mb-5">Find out how you can engage with brand directly, and take part of create
+                this page.</p>
+              <ul>
+                <li class="flex mb-4">
+                  <span class="w-1/4 text-sm">Basic Info</span>
+                  <div class="w-3/4 flex items-center">
+                    <div class="relative w-full">
+                      <div class="h-0.5 bg-gray-300"></div>
+                      <div class="w-2/3 h-1.5 bg-indigo-600 absolute left-0 -top-0.5"></div>
+                    </div>
+                    <span class="text-sm font-bold ml-3">68%</span>
+                  </div>
+                </li>
+                <li class="flex mb-4">
+                  <span class="w-1/4 text-sm">Basic Info</span>
+                  <div class="w-3/4 flex items-center">
+                    <div class="relative w-full">
+                      <div class="h-0.5 bg-gray-300"></div>
+                      <div class="w-1/3 h-1.5 bg-indigo-600 absolute left-0 -top-0.5"></div>
+                    </div>
+                    <span class="text-sm font-bold ml-3">38%</span>
+                  </div>
+                </li>
+                <li class="flex mb-4">
+                  <span class="w-1/4 text-sm">Basic Info</span>
+                  <div class="w-3/4 flex items-center">
+                    <div class="relative w-full">
+                      <div class="h-0.5 bg-gray-300"></div>
+                      <div class="w-4/5 h-1.5 bg-indigo-600 absolute left-0 -top-0.5"></div>
+                    </div>
+                    <span class="text-sm font-bold ml-3">82%</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/3 border border-gray-300 bg-white">
+        <div class="border-b border-gray-300">
+          <ul class="flex font-bold text-base">
+            <li class="w-1/2 flex justify-center border-b-2 border-indigo-600 items-center h-14">Latest Publications
+            </li>
+            <li class="w-1/2 flex justify-center items-center h-14 text-gray-400">Community</li>
+          </ul>
+        </div>
+        <div class="py-6 px-7 border-b border-gray-300">
+          <p class="text-base mb-0.5">
+            <span class="font-bold">Hannah Benneth</span>
+            <span class="text-gray-400">started a thread</span>
+          </p>
+          <p class="text-xs text-gray-400 mb-3">a few seconds ago</p>
+          <p class="text-xl mb-3 font-bold">The Best New Beauty Products Launching in February</p>
+          <p class="text-xs mb-3">
+            We may be in the midst of the shortest month of the year, but with winter dragging on and spring so close
+            yet so far...
+          </p>
+          <div class="flex text-xs font-bold">
+            <div class="flex mr-4">
+              <img src="./images/icons/heart.svg" class="mr-1" alt="">
+              <span>28</span>
+            </div>
+            <div class="flex mr-4">
+              <img src="./images/icons/chat.svg" class="mr-1" alt="">
+              <span>26</span>
+            </div>
+          </div>
+        </div>
+        <div class="py-6 px-7 border-b border-gray-300">
+          <p class="text-base mb-0.5">
+            <span class="font-bold">John Smith</span>
+            <span class="text-gray-400">posted an article</span>
+          </p>
+          <p class="text-xs text-gray-400 mb-3">January 25, 06:00 PM</p>
+          <div class="flex">
+            <div class="flex-shrink-0 mr-5">
+              <img src="./images/avatar/3.png" alt="">
+            </div>
+            <div>
+              <p class="text-xl mb-3 font-bold">Exclusive: Knix Launches Its First Shapewear Collection</p>
+              <p class="text-xs mb-3">
+                Shapewear is usually only worn on special occasions, but it was important for us to create a product...
+              </p>
+              <div class="flex text-xs font-bold">
+                <div class="flex mr-4">
+                  <img src="./images/icons/heart.svg" class="mr-1" alt="">
+                  <span>60</span>
+                </div>
+                <div class="flex mr-4">
+                  <img src="./images/icons/chat.svg" class="mr-1" alt="">
+                  <span>326</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-6 px-7">
+          <p class="text-base mb-0.5">
+            <span class="font-bold">Jannet Stevens</span>
+            <span class="text-gray-400">added images to album:</span>
+            <br>
+            <span class="font-bold">Madras Shore Coat</span>
+          </p>
+          <p class="text-xs text-gray-400 mb-5">January 24, 06:00 PM</p>
+          <div class="flex justify-between">
+            <img src="./images/avatar/4.png" alt="">
+            <img src="./images/avatar/4.png" alt="">
+            <img src="./images/avatar/4.png" alt="">
+            <img src="./images/avatar/4.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="px-10">
+    <div class="w-full pt-14 pb-7">
+      <div class="mt-1.5 flex lg:flex-row flex-col">
+        <div class="lg:w-1/3 md:w-full lg:mb-0 mb-9">
+          <p class="font-prequel mb-4">The Blanket Tape</p>
+          <p class="mb-4 lg:pr-10">
+            The Blanket Tape brings to you fashion related news and information. It is our mission to continue offering
+            our support to the fashion brands.
+          </p>
+          <div class="flex">
+            <img class="mr-5 pr-0.5" src="./images/icons/facebook.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/twitter.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/instagram.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/linkedin.svg" alt="">
+            <img class="mr-5 pr-0.5" src="./images/icons/pinterest.svg" alt="">
+          </div>
+        </div>
+        <div class="lg:w-2/3 md:w-full flex flex-wrap">
+          <div class="md:w-1/4 w-1/2 mb-7">
+            <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Solutions</p>
+            <ul>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Marketing</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Analytics</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Commerce</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Insights</a></li>
+            </ul>
+          </div>
+          <div class="md:w-1/4 w-1/2 mb-7">
+            <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Support</p>
+            <ul>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Pricing</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Documentation</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Guides</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">API Status</a></li>
+            </ul>
+          </div>
+          <div class="md:w-1/4 w-1/2 mb-7">
+            <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Company</p>
+            <ul>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">About</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Work</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Jobs</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Press</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Partners</a></li>
+            </ul>
+          </div>
+          <div class="md:w-1/4 w-1/2 mb-7">
+            <p class="font-bold text-gray-800 text-base mb-4 pb-0.5">Legal</p>
+            <ul>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Claim</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Privacy</a></li>
+              <li><a href="#" class="text-base text-gray-800 mb-2 block">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center border-t border-gray-300 text-gray-800 text-sm pb-7 pt-6">
+      <span class="mt-0 5">Copyright © 2020 The Blanket Type | All Rights Reserved</span>
+    </div>
+  </div>
+
+  <script>
+    var isOpen = false;
+
+    document.querySelector('#hamburger').addEventListener('click', function () {
+      isOpen = !isOpen;
+      if (isOpen) {
+        document.querySelector('#mobile-menu').classList.remove('-left-80');
+        document.querySelector('#mobile-menu').classList.add('left-0')
+      } else {
+        document.querySelector('#mobile-menu').classList.remove('left-0')
+        document.querySelector('#mobile-menu').classList.add('-left-80');
+      }
+    });
+
+    document.querySelector('#setting').addEventListener('click', function () {
+      var hasClass = document.querySelector('#board').classList.contains('hidden');
+      if (hasClass) {
+        document.querySelector('#board').classList.remove('hidden');
+      } else {
+        document.querySelector('#board').classList.add('hidden');
+      }
+    });
+
+    document.body.addEventListener('click', function (e) {
+      if (!(e.target.id === 'setting-image')) {
+        document.querySelector('#board').classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+
+</html>
