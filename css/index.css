@@ -74,6 +74,10 @@ body * {
   .create-new-post-container {
     width: 270px;
   }
+
+  .footer-link {
+    width: 25%;
+  }
 }
 
 @media(min-width: 320px) and (max-width: 479px) {
