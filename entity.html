@@ -11,8 +11,8 @@
 </head>
 
 <body class="border-2 border-gray-800 w-full relative">
-  <div id="background" class="w-full h-screen bg-black box-border fixed bg-opacity-90 z-40 hidden"></div>
-  <div id="contributors-modal" class="fixed z-50 top-20 bg-white left-1/2 md:px-10 md:py-7 p-2 hidden">
+  <div id="background" class="w-full h-screen bg-black box-border fixed bg-opacity-70 z-40 hidden"></div>
+  <div id="contributors-modal" class="fixed z-50 bg-white left-1/2 md:px-10 md:py-7 p-2">
     <button class="cursor-pointer absolute lg:top-4 lg:-right-6 top-2.5 right-2.5 lg:w-10 lg:h-10 w-8 h-8 close">
       <img src="./images/icons/close.svg" />
     </button>
@@ -104,7 +104,7 @@
       </div>
     </div>
   </div>
-  <div id="keypersons-modal" class="fixed z-50 top-20 bg-white left-1/2 md:px-10 md:py-7 p-2 hidden">
+  <div id="keypersons-modal" class="fixed z-50 bg-white left-1/2 md:px-10 md:py-7 p-2">
     <button class="cursor-pointer absolute lg:top-4 lg:-right-6 top-2.5 right-2.5 lg:w-10 lg:h-10 w-8 h-8 close">
       <img src="./images/icons/close.svg" />
     </button>
@@ -3385,25 +3385,25 @@
 
     function openContributorsModal() {
       document.querySelector('#background').classList.remove('hidden');
-      document.querySelector('#contributors-modal').classList.remove('hidden');
+      document.querySelector('#contributors-modal').classList.add('open');
       document.body.classList.add('overflow-hidden');
     }
 
     function openKeypersonsModal() {
       document.querySelector('#background').classList.remove('hidden');
-      document.querySelector('#keypersons-modal').classList.remove('hidden');
+      document.querySelector('#keypersons-modal').classList.add('open');
       document.body.classList.add('overflow-hidden');
     }
 
     function closeContributorsModal() {
       document.querySelector('#background').classList.add('hidden');
-      document.querySelector('#contributors-modal').classList.add('hidden');
+      document.querySelector('#contributors-modal').classList.remove('open');
       document.body.classList.remove('overflow-hidden');
     }
 
     function closeKeypersonsModal() {
       document.querySelector('#background').classList.add('hidden');
-      document.querySelector('#keypersons-modal').classList.add('hidden');
+      document.querySelector('#keypersons-modal').classList.remove('open');
       document.body.classList.remove('overflow-hidden');
     }
   </script>

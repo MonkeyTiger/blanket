@@ -103,7 +103,17 @@ body * {
 }
 
 #contributors-modal, #keypersons-modal {
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+  top: 0%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#contributors-modal.open, #keypersons-modal.open {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 @media(min-width: 1024px) {
