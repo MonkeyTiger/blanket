@@ -3755,7 +3755,7 @@
 
     document.querySelector('#open-key-person').addEventListener('click', function () {
       openModal = 'keypersons';
-      openModal = 'keypersons';
+      scrollTop = document.body.scrollTop;
       if (window.innerWidth < 768) {
         document.body.classList.add('overflow-hidden');
         document.querySelector('#key-person').classList.remove('border-r-2');
@@ -3798,7 +3798,7 @@
     for (let i = 0; i < document.querySelectorAll('.open-contributors-modal').length; i++) {
       document.querySelectorAll('.open-contributors-modal')[i].addEventListener('click', function () {
         openModal = 'contributors';
-        openModal = 'keypersons';
+        scrollTop = document.body.scrollTop;
         if (window.innerWidth < 768) {
           document.body.classList.add('overflow-hidden');
           document.querySelector('#contributors').classList.remove('border-r-2');
