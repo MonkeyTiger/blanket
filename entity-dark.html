@@ -3754,7 +3754,7 @@
 
     document.querySelector('#open-key-person').addEventListener('click', function () {
       openModal = 'keypersons';
-      if (window.innerWidth < 640) {
+      if (window.innerWidth < 768) {
         document.body.classList.add('overflow-hidden');
         document.querySelector('#key-person').classList.remove('border-r-2');
         document.querySelector('#key-person').classList.add('right-0');
@@ -3790,7 +3790,7 @@
     for (let i = 0; i < document.querySelectorAll('.open-contributors-modal').length; i++) {
       document.querySelectorAll('.open-contributors-modal')[i].addEventListener('click', function () {
         openModal = 'contributors';
-        if (window.innerWidth < 640) {
+        if (window.innerWidth < 768) {
           document.body.classList.add('overflow-hidden');
           document.querySelector('#contributors').classList.remove('border-r-2');
           document.querySelector('#contributors').classList.add('right-0');
