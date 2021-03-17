@@ -111,10 +111,12 @@ body * {
   top: 0%;
   opacity: 0;
   transition: 0.5s;
+  pointer-events: none;
 }
 
 #contributors-modal.open, #keypersons-modal.open {
   transform: translate(-50%, -50%);
+  pointer-events: inherit;
   top: 50%;
   opacity: 1;
   transition: 0.5s;

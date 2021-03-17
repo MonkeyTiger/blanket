@@ -3650,6 +3650,7 @@
   <script>
     var isOpen = false;
     var openModal = '';
+    var scrollTop = 0;
 
     document.querySelector('#hamburger').addEventListener('click', function () {
       isOpen = !isOpen;
@@ -3754,6 +3755,7 @@
 
     document.querySelector('#open-key-person').addEventListener('click', function () {
       openModal = 'keypersons';
+      openModal = 'keypersons';
       if (window.innerWidth < 768) {
         document.body.classList.add('overflow-hidden');
         document.querySelector('#key-person').classList.remove('border-r-2');
@@ -3766,6 +3768,7 @@
     });
 
     document.querySelector('#key-person .back').addEventListener('click', function () {
+      document.body.scrollTop = scrollTop;
       openModal = '';
       document.body.classList.remove('overflow-hidden');
       document.querySelector('#key-person').classList.add('border-r-2');
@@ -3774,6 +3777,7 @@
     });
 
     document.querySelector('#contributors .back').addEventListener('click', function () {
+      document.body.scrollTop = scrollTop;
       openModal = '';
       document.body.classList.remove('overflow-hidden');
       document.querySelector('#contributors').classList.add('border-r-2');
@@ -3790,6 +3794,7 @@
     for (let i = 0; i < document.querySelectorAll('.open-contributors-modal').length; i++) {
       document.querySelectorAll('.open-contributors-modal')[i].addEventListener('click', function () {
         openModal = 'contributors';
+        openModal = 'keypersons';
         if (window.innerWidth < 768) {
           document.body.classList.add('overflow-hidden');
           document.querySelector('#contributors').classList.remove('border-r-2');
