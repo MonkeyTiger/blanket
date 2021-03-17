@@ -3768,21 +3768,25 @@
     });
 
     document.querySelector('#key-person .back').addEventListener('click', function () {
-      document.body.scrollTop = scrollTop;
       openModal = '';
       document.body.classList.remove('overflow-hidden');
       document.querySelector('#key-person').classList.add('border-r-2');
       document.querySelector('#key-person').classList.add('right-full');
       document.querySelector('#key-person').classList.remove('right-0');
+      setTimeout(function () {
+        document.body.scrollTop = scrollTop;
+      }, 500);
     });
 
     document.querySelector('#contributors .back').addEventListener('click', function () {
-      document.body.scrollTop = scrollTop;
       openModal = '';
       document.body.classList.remove('overflow-hidden');
       document.querySelector('#contributors').classList.add('border-r-2');
       document.querySelector('#contributors').classList.add('right-full');
       document.querySelector('#contributors').classList.remove('right-0');
+      setTimeout(function () {
+        document.body.scrollTop = scrollTop;
+      }, 500);
     });
 
     document.querySelector('#background').addEventListener('click', function () {
