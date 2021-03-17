@@ -101,3 +101,25 @@ body * {
     font-size: 10px;
   }
 }
+
+
+@media(min-width: 1024px) {
+  #contributors-modal {
+    width: 800px;
+    transform: translateX(-50%);
+  }
+}
+
+@media(max-width: 1024px) {
+  #keypersons-modal {
+    width: calc(100% - 10px);
+    transform: translateX(-50%);
+  }
+}
+
+@media(min-width: 640px) {
+  #keypersons-modal {
+    width: 498px;
+    transform: translateX(-50%);
+  }
+}
